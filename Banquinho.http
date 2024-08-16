@@ -1,0 +1,6 @@
+@Banquinho_HostAddress = http://localhost:5226
+
+GET {{Banquinho_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
