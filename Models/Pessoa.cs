@@ -6,11 +6,10 @@ namespace Models;
 public class People
 {
     [Key]
-    public int id {get;set;}
-    public int CPF {get;set;}
+    public uint id {get;set;}
+    public uint CPF {get;set;}
     public string? name {get;set;}
-    [DataType(DataType.DateTime)]
     public DateTime? nascimento {get;set;}
     public Endereco? endereco {get;set;}
-    public Agencia? agencia {get;set;}
+    public Agencia? agencia  {get;set;}
 }
