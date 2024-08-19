@@ -6,4 +6,5 @@ namespace Models.Client;
 public class ContaCC : Conta
 {
     public ICollection<TransferCC> trans {get;} = new List<TransferCC>();
+
 }
