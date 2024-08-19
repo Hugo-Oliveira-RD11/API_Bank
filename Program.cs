@@ -1,3 +1,7 @@
+using Infra.Client;
+using Infra.Employee;
+using Infra.Transfer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IClientRepository, ClientRepository>();
+builder.Services.AddTransient<IFuncionarioRepository, FuncionarioRepository>();
+builder.Services.AddTransient<ITransferRepository, TransferRepository>();
 
 var app = builder.Build();
 
