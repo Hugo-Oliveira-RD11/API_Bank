@@ -1,14 +1,16 @@
+using System.ComponentModel.DataAnnotations;
 using Banquinho.Models.Client;
 
 namespace Banquinho.Models.Contact;
 
 public class PeopleContacts
 {
-    public Guid Id { get; set; }
+    [Key]
+    public Guid ID { get; set; }
+    public string? Celular { get; set; }
+    public string? Telefone { get; set; }
     
-    public Contacts contacts { get; set; }
-    public Guid contacts_id { get; set; }
+    public People? people { get; set; }
+    public ulong CPF_Id { get; set; }
     
-    public People people { get; set; }
-    public ulong CPF_id { get; set; }
 }

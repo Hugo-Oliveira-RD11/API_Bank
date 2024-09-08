@@ -14,6 +14,6 @@ public class AccountCorrent
     public People people { get; set; }
     public ulong CPF_id { get; set; }
 
-    public ICollection<HistoryCorrent> history_mouth { get; set; }
+    public ICollection<HistoryCorrent> history_mouth { get; set; } = new List<HistoryCorrent>();
 
 }

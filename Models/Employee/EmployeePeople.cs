@@ -15,6 +15,8 @@ public class EmployeePeople
 
     public EmployeeContacts contacts { get; set; }
     public Guid Id { get; set; }
+    public Employees employees { get; set; }
+    public Guid EmployeeId { get; set; }
     
     [DataType(DataType.DateTime)]
     public DateTime? Created {get;set;}

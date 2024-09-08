@@ -14,13 +14,12 @@ public class People
     [DataType(DataType.Date)]
     public DateOnly? nascimento {get;set;}
     public string? Celular { get; set; }
+    public string? Email { get; set; }
 
     public AccountCorrent accountCorrent { get; set; }
-    public Guid accountCorrent_Id { get; set; }
     public AccountPoupanca accountPoupanca { get; set; }
-    public Guid accountPoupanca_Id { get; set; }
-    public PeopleContacts PeopleContacts { get; set; }
-    public Guid contacts_Id { get; set; }
+
+    public ICollection<PeopleContacts> peopleContacts { get; set; } = new List<PeopleContacts>(); 
     
     public ICollection<PeopleEndereco> peopleEndereco { get; set; }
     
