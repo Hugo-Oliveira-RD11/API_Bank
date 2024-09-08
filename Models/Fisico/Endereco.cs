@@ -1,11 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Models;
+namespace Banquinho.Models;
 
 public class Endereco
 {
     [Key]
-    public int id {get;set;}
+    public Guid id {get;set;}
     public string? Bairro {get;set;}
     public uint NumCasa {get;set;}
     public uint CEP {get;set;}
@@ -14,5 +14,4 @@ public class Endereco
     public string? Estato {get;set;}
     [DataType(DataType.DateTime)]
     public DateTime? Created {get;set;}
-    public People? people {get;set;}
 }
