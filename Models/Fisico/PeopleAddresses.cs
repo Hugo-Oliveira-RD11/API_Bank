@@ -3,7 +3,7 @@ using Banquinho.Models.Client;
 
 namespace Banquinho.Models.Fisico;
 
-public class PeopleEndereco : Endereco
+public class PeopleAddresses : Addresses
 {
     /*[Key]
     public Guid id {get;set;}
@@ -16,7 +16,7 @@ public class PeopleEndereco : Endereco
     [DataType(DataType.DateTime)]
     public DateTime? Created {get;set;} */
 
-    public People people { get; set; }
+    public Peoples people { get; set; }
     public ulong CPF_id { get; set; }
     
 }

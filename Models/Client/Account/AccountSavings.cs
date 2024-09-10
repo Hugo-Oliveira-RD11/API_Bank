@@ -3,7 +3,7 @@ using Banquinho.Models.Client.Account.History;
 
 namespace Banquinho.Models.Client.Account;
 
-public class AccountPoupanca
+public class AccountSavings
 {
     [Key]
     public Guid Id_conta { get; set; }
@@ -13,8 +13,8 @@ public class AccountPoupanca
     public ulong Caixa { get; set; }
     public DateOnly Data_Cobranca { get; set; }
 
-    public People people { get; set; }
+    public Peoples people { get; set; }
     public ulong CPF_id { get; set; }
 
-    public ICollection<HistoryPoupanca> history { get; set; }
+    public ICollection<HistorySavings> history { get; set; }
 }

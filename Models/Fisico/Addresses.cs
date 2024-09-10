@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Banquinho.Models;
 
-public abstract class Endereco
+public abstract class Addresses
 {
     [Key]
     public Guid id {get;set;}

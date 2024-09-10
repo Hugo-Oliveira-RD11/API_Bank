@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations;
-using Banquinho.Models.Employee;
+using Banquinho.Models.Employeeses;
 
 namespace Banquinho.Models.Fisico;
 
-public class EmployeeEndereco : Endereco
+public class EmployeeAddresses : Addresses
 {
     /*[Key]
     public Guid id {get;set;}
@@ -16,6 +16,6 @@ public class EmployeeEndereco : Endereco
     [DataType(DataType.DateTime)]
     public DateTime? Created {get;set;}*/
 
-    public Employees employee { get; set; }
+    public EmployeePeoples employee { get; set; }
     public Guid CPF_Id {get;set;}
 }

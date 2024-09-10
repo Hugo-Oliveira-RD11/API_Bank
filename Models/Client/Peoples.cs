@@ -5,7 +5,7 @@ using Banquinho.Models.Fisico;
 
 namespace Banquinho.Models.Client;
 
-public class People
+public class Peoples
 {
     [Key]
     public ulong CPF {get;set;}
@@ -16,12 +16,12 @@ public class People
     public string? Celular { get; set; }
     public string? Email { get; set; }
 
-    public AccountCorrent accountCorrent { get; set; }
-    public AccountPoupanca accountPoupanca { get; set; }
+    public AccountCorrents accountCorrents { get; set; }
+    public AccountSavings accountSavings { get; set; }
 
     public ICollection<PeopleContacts> peopleContacts { get; set; } = new List<PeopleContacts>(); 
     
-    public ICollection<PeopleEndereco> peopleEndereco { get; set; }
+    public ICollection<PeopleAddresses> peopleEndereco { get; set; }
     
     
     [DataType(DataType.DateTime)]

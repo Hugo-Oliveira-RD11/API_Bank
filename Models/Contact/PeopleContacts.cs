@@ -10,7 +10,7 @@ public class PeopleContacts
     public string? Celular { get; set; }
     public string? Telefone { get; set; }
     
-    public People? people { get; set; }
+    public Peoples? people { get; set; }
     public ulong CPF_Id { get; set; }
     
 }

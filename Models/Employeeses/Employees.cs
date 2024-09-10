@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Banquinho.Models.Fisico;
 
-namespace Banquinho.Models.Employee;
+namespace Banquinho.Models.Employeeses;
 
 public enum Cargo{gerente = 1, subgerente =2, balconista=3}
 
@@ -13,10 +13,10 @@ public class Employees
     public uint agencia {get;set;}
     public uint senha {get;set;}
     public Cargo cargo  {get;set;}
-    public DateTime? Created {get;set;}
+    public DateTime? Created {get;} = DateTime.Now;
+    public DateTime? Modified {get; set; } 
     public bool Ativo {get;set;}
     
-    public ICollection<EmployeeEndereco>? endereco {get;set;}
 
-    public EmployeePeople EmployeePeople { get; set; }
+    public EmployeePeoples EmployeePeoples { get; set; }
 }
